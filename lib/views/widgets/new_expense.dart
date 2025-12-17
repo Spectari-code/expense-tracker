@@ -110,10 +110,10 @@ class _NewExpenseState extends State<NewExpense> {
                       ? 'Select date'
                       : dateFormatter.format(_selectedDate!),
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: _selectedDate == null
-                        ? Theme.of(context).colorScheme.onSurfaceVariant
-                        : Theme.of(context).colorScheme.onSurface,
-                  ),
+                        color: _selectedDate == null
+                            ? Theme.of(context).colorScheme.onSurfaceVariant
+                            : Theme.of(context).colorScheme.onSurface,
+                      ),
                 ),
               ),
             ],
@@ -142,12 +142,18 @@ class _NewExpenseState extends State<NewExpense> {
             decoration: BoxDecoration(
               color: isSelected
                   ? categoryColor.withValues(alpha: 0.1)
-                  : Theme.of(context).colorScheme.surfaceContainerHighest.withValues(alpha: 0.3),
+                  : Theme.of(context)
+                      .colorScheme
+                      .surfaceContainerHighest
+                      .withValues(alpha: 0.3),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: isSelected
                     ? categoryColor.withValues(alpha: 0.3)
-                    : Theme.of(context).colorScheme.outline.withValues(alpha: 0.2),
+                    : Theme.of(context)
+                        .colorScheme
+                        .outline
+                        .withValues(alpha: 0.2),
                 width: isSelected ? 2 : 1,
               ),
             ),
@@ -157,15 +163,20 @@ class _NewExpenseState extends State<NewExpense> {
                 Icon(
                   categoryIcons[category],
                   size: 18,
-                  color: isSelected ? categoryColor : Theme.of(context).colorScheme.onSurfaceVariant,
+                  color: isSelected
+                      ? categoryColor
+                      : Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _getCategoryLabel(category),
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: isSelected ? categoryColor : Theme.of(context).colorScheme.onSurfaceVariant,
-                    fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
-                  ),
+                        color: isSelected
+                            ? categoryColor
+                            : Theme.of(context).colorScheme.onSurfaceVariant,
+                        fontWeight:
+                            isSelected ? FontWeight.w600 : FontWeight.w500,
+                      ),
                 ),
               ],
             ),
@@ -262,8 +273,7 @@ class _NewExpenseState extends State<NewExpense> {
                   else ...[
                     TextField(
                       controller: _amountController,
-                      keyboardType:
-                          const TextInputType.numberWithOptions(),
+                      keyboardType: const TextInputType.numberWithOptions(),
                       decoration: const InputDecoration(
                         label: Text('Amount'),
                         prefixText: 'R ',
@@ -281,10 +291,13 @@ class _NewExpenseState extends State<NewExpense> {
                     children: [
                       Text(
                         'Category',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w500,
-                          color: Theme.of(context).colorScheme.onSurface,
-                        ),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium
+                            ?.copyWith(
+                              fontWeight: FontWeight.w500,
+                              color: Theme.of(context).colorScheme.onSurface,
+                            ),
                       ),
                       const SizedBox(height: 12),
                       _buildCategorySelector(),

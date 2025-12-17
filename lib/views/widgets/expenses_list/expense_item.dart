@@ -53,9 +53,9 @@ class ExpenseItem extends StatelessWidget {
                   child: Text(
                     expense.title,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
+                          fontWeight: FontWeight.w600,
+                          color: Theme.of(context).colorScheme.onSurface,
+                        ),
                   ),
                 ),
               ],
@@ -71,18 +71,19 @@ class ExpenseItem extends StatelessWidget {
                     Text(
                       'R ${expense.amount.toStringAsFixed(2)}',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.w700,
-                        color: Theme.of(context).colorScheme.primary,
-                        fontSize: 24,
-                      ),
+                            fontWeight: FontWeight.w700,
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 24,
+                          ),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       expense.formattedDate,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        fontWeight: FontWeight.w500,
-                      ),
+                            color:
+                                Theme.of(context).colorScheme.onSurfaceVariant,
+                            fontWeight: FontWeight.w500,
+                          ),
                     ),
                   ],
                 ),
@@ -90,7 +91,8 @@ class ExpenseItem extends StatelessWidget {
 
                 // Category pill
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
                     color: categoryColor.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(20),
@@ -102,9 +104,9 @@ class ExpenseItem extends StatelessWidget {
                   child: Text(
                     _getCategoryLabel(expense.category),
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: categoryColor,
-                      fontWeight: FontWeight.w600,
-                    ),
+                          color: categoryColor,
+                          fontWeight: FontWeight.w600,
+                        ),
                   ),
                 ),
               ],

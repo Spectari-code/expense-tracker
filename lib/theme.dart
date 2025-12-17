@@ -101,11 +101,13 @@ ThemeData lightTheme = ThemeData(
     fillColor: kLightColorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: kLightColorScheme.outline.withValues(alpha: 0.5)),
+      borderSide:
+          BorderSide(color: kLightColorScheme.outline.withValues(alpha: 0.5)),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: kLightColorScheme.outline.withValues(alpha: 0.5)),
+      borderSide:
+          BorderSide(color: kLightColorScheme.outline.withValues(alpha: 0.5)),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
@@ -195,11 +197,13 @@ ThemeData darkTheme = ThemeData(
     fillColor: kDarkColorScheme.surfaceContainerHighest.withValues(alpha: 0.3),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: kDarkColorScheme.outline.withValues(alpha: 0.5)),
+      borderSide:
+          BorderSide(color: kDarkColorScheme.outline.withValues(alpha: 0.5)),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: kDarkColorScheme.outline.withValues(alpha: 0.5)),
+      borderSide:
+          BorderSide(color: kDarkColorScheme.outline.withValues(alpha: 0.5)),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),

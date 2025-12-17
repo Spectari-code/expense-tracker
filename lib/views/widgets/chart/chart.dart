@@ -47,7 +47,10 @@ class Chart extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           color: isDark
-              ? Theme.of(context).colorScheme.surfaceContainerHighest.withValues(alpha: 0.3)
+              ? Theme.of(context)
+                  .colorScheme
+                  .surfaceContainerHighest
+                  .withValues(alpha: 0.3)
               : Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
         ),
         child: Column(
@@ -56,9 +59,9 @@ class Chart extends StatelessWidget {
             Text(
               'Spending Overview',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.w600,
-                color: Theme.of(context).colorScheme.onSurface,
-              ),
+                    fontWeight: FontWeight.w600,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
             ),
             const SizedBox(height: 20),
 
@@ -95,22 +98,27 @@ class Chart extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                              color: _getCategoryColor(context, bucket.category).withValues(alpha: 0.1),
+                              color: _getCategoryColor(context, bucket.category)
+                                  .withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Icon(
                               categoryIcons[bucket.category],
                               size: 24,
-                              color: _getCategoryColor(context, bucket.category),
+                              color:
+                                  _getCategoryColor(context, bucket.category),
                             ),
                           ),
                           const SizedBox(height: 8),
                           Text(
                             _getCategoryLabel(bucket.category),
-                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              fontWeight: FontWeight.w500,
-                              color: Theme.of(context).colorScheme.onSurfaceVariant,
-                            ),
+                            style:
+                                Theme.of(context).textTheme.bodySmall?.copyWith(
+                                      fontWeight: FontWeight.w500,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurfaceVariant,
+                                    ),
                             textAlign: TextAlign.center,
                           ),
                         ],
