@@ -20,11 +20,11 @@ A beautiful, cross-platform expense tracking application built with Flutter and 
 
 ## 📸 Screenshots
 
-![Expense Tracker Main Screen](lib/assets/screenshots/Screenshot_1765975102.png)
-![Add New Expense](lib/assets/screenshots/Screenshot_1765975139.png)
-![Expense List View](lib/assets/screenshots/Screenshot_1765975151.png)
-![Expense Categories](lib/assets/screenshots/Screenshot_1765975163.png)
-![Spending Analytics](lib/assets/screenshots/Screenshot_1765975174.png)
+<img src="lib/assets/screenshots/Screenshot_1765975102.png" width="400" alt="Expense Tracker Main Screen">
+<img src="lib/assets/screenshots/Screenshot_1765975139.png" width="400" alt="Add New Expense">
+<img src="lib/assets/screenshots/Screenshot_1765975151.png" width="400" alt="Expense List View">
+<img src="lib/assets/screenshots/Screenshot_1765975163.png" width="400" alt="Expense Categories">
+<img src="lib/assets/screenshots/Screenshot_1765975174.png" width="400" alt="Spending Analytics">
 
 ## 🚀 Installation & Setup
 
