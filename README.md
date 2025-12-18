@@ -9,51 +9,53 @@ A beautiful, cross-platform expense tracking application built with Flutter and 
 
 ## ✨ Features
 
-- **📊 Expense Categorization** - Organize expenses into 5 categories: Food, Travel, Leisure, Work, and Utilities
-- **📈 Visual Analytics** - Interactive charts to visualize spending patterns and trends
-- **➕ Expense Management** - Add, edit, and delete expenses with intuitive UI
-- **🎨 Material 3 Design** - Modern design with support for both light and dark themes
-- **📱 Cross-Platform** - Runs on Android, iOS, Web, and Desktop platforms
-- **🔄 Real-time Updates** - Reactive state management with Provider pattern
-- **💾 Local Storage** - Persistent expense data with unique identifiers
-- **🌐 Responsive UI** - Adaptive layout that works on all screen sizes
+-   **📊 Expense Categorization** - Organize expenses into 5 categories: Food, Travel, Leisure, Work, and Utilities
+-   **📈 Visual Analytics** - Interactive charts to visualize spending patterns and trends
+-   **➕ Expense Management** - Add, edit, and delete expenses with intuitive UI
+-   **🎨 Material 3 Design** - Modern design with support for both light and dark themes
+-   **📱 Cross-Platform** - Runs on Android, iOS, Web, and Desktop platforms
+-   **🔄 Real-time Updates** - Reactive state management with Provider pattern
+-   **💾 Local Storage** - Persistent expense data with unique identifiers
+-   **🌐 Responsive UI** - Adaptive layout that works on all screen sizes
 
 ## 📸 Screenshots
 
-<img src="lib/assets/screenshots/Screenshot_1765975102.png" width="400" alt="Expense Tracker Main Screen">
-<img src="lib/assets/screenshots/Screenshot_1765975139.png" width="400" alt="Add New Expense">
-<img src="lib/assets/screenshots/Screenshot_1765975151.png" width="400" alt="Expense List View">
-<img src="lib/assets/screenshots/Screenshot_1765975163.png" width="400" alt="Expense Categories">
+<img src="lib/assets/screenshots/Screenshot_20251218_064126.png" width="400" alt="Expense Tracker Main Screen">
+<img src="lib/assets/screenshots/Screenshot_20251218_064220.png" width="400" alt="Add New Expense">
+<img src="lib/assets/screenshots/Screenshot_20251218_064557.png" width="400" alt="Expense Categories">
 <img src="lib/assets/screenshots/Screenshot_1765975174.png" width="400" alt="Spending Analytics">
 
 ## 🚀 Installation & Setup
 
 ### Prerequisites
 
-- **Flutter SDK**: `>=3.3.0 <4.0.0`
-- **Dart SDK**: `>=3.3.0 <4.0.0`
+-   **Flutter SDK**: `>=3.3.0 <4.0.0`
+-   **Dart SDK**: `>=3.3.0 <4.0.0`
 
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Spectari-code/expense-tracker.git
-   cd expense-tracker
-   ```
+
+    ```bash
+    git clone https://github.com/Spectari-code/expense-tracker.git
+    cd expense-tracker
+    ```
 
 2. **Install dependencies**
-   ```bash
-   flutter pub get
-   ```
+
+    ```bash
+    flutter pub get
+    ```
 
 3. **Verify setup**
-   ```bash
-   flutter doctor
-   ```
+    ```bash
+    flutter doctor
+    ```
 
 ### Platform-Specific Setup
 
 #### Android Development
+
 ```bash
 # Install Android Studio and SDK
 # Accept Android SDK licenses
@@ -61,6 +63,7 @@ flutter doctor --android-licenses
 ```
 
 #### Web Development
+
 ```bash
 # Install Chrome browser
 # Run on web
@@ -68,6 +71,7 @@ flutter run -d chrome
 ```
 
 #### Desktop Development (Linux/Mac/Windows)
+
 ```bash
 # Enable desktop support
 flutter config --enable-linux-desktop   # Linux
@@ -122,9 +126,9 @@ lib/
 
 This app follows the **MVVM (Model-View-ViewModel)** architectural pattern:
 
-- **Models** (`data/models/`): Data structures and business logic
-- **ViewModels** (`viewmodels/`): State management and data transformation
-- **Views** (`views/`): UI components and screens
+-   **Models** (`data/models/`): Data structures and business logic
+-   **ViewModels** (`viewmodels/`): State management and data transformation
+-   **Views** (`views/`): UI components and screens
 
 State management is handled by **Provider** with `ChangeNotifier` for reactive updates.
 
@@ -154,16 +158,16 @@ flutter build apk
 
 ### Code Quality
 
-- **Linting**: `flutter analyze`
-- **Formatting**: `dart format .`
-- **Testing**: `flutter test`
-- **Fixes**: `dart fix --apply`
+-   **Linting**: `flutter analyze`
+-   **Formatting**: `dart format .`
+-   **Testing**: `flutter test`
+-   **Fixes**: `dart fix --apply`
 
 ### Dependencies
 
-- `provider: ^6.1.5+1` - State management
-- `intl: ^0.20.2` - Internationalization and date formatting
-- `uuid: ^4.3.3` - Unique expense identifiers
+-   `provider: ^6.1.5+1` - State management
+-   `intl: ^0.20.2` - Internationalization and date formatting
+-   `uuid: ^4.3.3` - Unique expense identifiers
 
 ## 🤝 Contributing
 
@@ -171,15 +175,15 @@ We welcome contributions! Please follow these guidelines:
 
 ### Code Style
 
-- **Imports**: Use relative imports within `lib/`, absolute imports for external packages
-- **Formatting**: Line length ≤ 80 characters, use `dart format`
-- **Types**: Strong typing with null safety throughout
-- **Naming**:
-  - Variables/functions: `camelCase`
-  - Classes/enums: `PascalCase`
-  - Files: `snake_case`
-- **Constructors**: Use `const` constructors for widgets where possible
-- **Error Handling**: Use try-catch blocks with meaningful error messages
+-   **Imports**: Use relative imports within `lib/`, absolute imports for external packages
+-   **Formatting**: Line length ≤ 80 characters, use `dart format`
+-   **Types**: Strong typing with null safety throughout
+-   **Naming**:
+    -   Variables/functions: `camelCase`
+    -   Classes/enums: `PascalCase`
+    -   Files: `snake_case`
+-   **Constructors**: Use `const` constructors for widgets where possible
+-   **Error Handling**: Use try-catch blocks with meaningful error messages
 
 ### Development Workflow
 
@@ -199,8 +203,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub**: [Spectari-code](https://github.com/Spectari-code)
-- **Website**: [theovisagie.com](https://theovisagie.com)
+-   **GitHub**: [Spectari-code](https://github.com/Spectari-code)
+-   **Website**: [theovisagie.com](https://theovisagie.com)
 
 ---
 
